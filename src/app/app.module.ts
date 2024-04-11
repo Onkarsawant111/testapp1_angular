@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WarningalertComponent } from './warningalert/warningalert.component';
+import { SuccessalertComponent } from './successalert/successalert.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WarningalertComponent,
+    SuccessalertComponent,
   ],
   imports: [
     BrowserModule,
@@ -18,3 +21,4 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+;
